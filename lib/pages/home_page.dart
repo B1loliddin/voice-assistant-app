@@ -86,17 +86,17 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.menu),
+          icon: const Icon(Icons.menu),
         ),
-        title: Text(CustomStrings.appBarTitle),
+        title: const Text(CustomStrings.appBarTitle),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
 
             /// #voice assistant image
-            Stack(
+            const Stack(
               children: [
                 ClipOval(
                   child: ColoredBox(
@@ -118,7 +118,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            SizedBox(height: 40),
+            const SizedBox(height: 40),
 
             /// #chat bubble
             Padding(
@@ -126,11 +126,11 @@ class _HomePageState extends State<HomePage> {
               child: DecoratedBox(
                 decoration: BoxDecoration(
                   border: Border.all(color: CustomColors.borderColor),
-                  borderRadius: BorderRadius.all(Radius.circular(20))
-                      .copyWith(topLeft: Radius.circular(0)),
+                  borderRadius: const BorderRadius.all(Radius.circular(20))
+                      .copyWith(topLeft: const Radius.circular(0)),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
                   child: Text(
                     generatedContent ?? CustomStrings.welcomeText,
                     style: TextStyle(
@@ -142,12 +142,12 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
 
             /// #response image
             if (generatedImageUrl != null)
               ClipRRect(
-                borderRadius: BorderRadius.all(Radius.circular(20)),
+                borderRadius: const BorderRadius.all(Radius.circular(20)),
                 child: Image(
                   image: NetworkImage(generatedImageUrl!),
                   fit: BoxFit.cover,
@@ -157,8 +157,8 @@ class _HomePageState extends State<HomePage> {
             /// #suggestions text
             Visibility(
               visible: generatedImageUrl == null && generatedContent == null,
-              child: Padding(
-                padding: const EdgeInsets.only(left: 32),
+              child: const Padding(
+                padding: EdgeInsets.only(left: 32),
                 child: Align(
                   alignment: Alignment.topLeft,
                   child: Text(
@@ -174,15 +174,15 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             generatedImageUrl == null
-                ? SizedBox(height: 20)
-                : SizedBox.shrink(),
+                ? const SizedBox(height: 20)
+                : const SizedBox.shrink(),
 
             /// #suggestions list
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 35),
               child: Visibility(
                 visible: generatedImageUrl == null && generatedContent == null,
-                child: Column(
+                child: const Column(
                   children: [
                     SuggestionBox(
                       color: CustomColors.firstSuggestionBoxColor,
@@ -206,14 +206,14 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: onPressedFAB,
         child: AnimatedSwitcher(
-          duration: Duration(milliseconds: 300),
+          duration: const Duration(milliseconds: 300),
           transitionBuilder: (child, animation) =>
               ScaleTransition(scale: animation, child: child),
           child: Icon(

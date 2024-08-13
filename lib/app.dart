@@ -12,11 +12,11 @@ class VoiceAssistant extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light().copyWith(
         scaffoldBackgroundColor: CustomColors.whiteColor,
-        appBarTheme: AppBarTheme(color: CustomColors.whiteColor),
+        appBarTheme: const AppBarTheme(color: CustomColors.whiteColor),
       ),
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.light,
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

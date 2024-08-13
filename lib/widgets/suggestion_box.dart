@@ -19,7 +19,7 @@ class SuggestionBox extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         color: color,
-        borderRadius: BorderRadius.all(Radius.circular(15)),
+        borderRadius: const BorderRadius.all(Radius.circular(15)),
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
@@ -30,7 +30,7 @@ class SuggestionBox extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(
                 headerText,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: CustomColors.blackColor,
@@ -38,12 +38,12 @@ class SuggestionBox extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 3),
+            const SizedBox(height: 3),
             Padding(
               padding: const EdgeInsets.only(right: 20),
               child: Text(
                 descriptionText,
-                style: TextStyle(
+                style: const TextStyle(
                   color: CustomColors.blackColor,
                   fontFamily: CustomFonts.ceraPro,
                 ),
