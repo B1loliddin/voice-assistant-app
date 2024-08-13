@@ -1,5 +1,5 @@
 # Voice Assistant App
-Voice assistant app have been to solve simple and day-to-day problems.
+Voice assistant app have been created to solve simple and day-to-day problems.
 [reference link](https://www.youtube.com/watch?v=Q_pz4xFow3Q&list=PLlzmAWV2yTgCjoZNF3hLX3puYJir9vSQO&index=11)
 
 ## Table of Contents
