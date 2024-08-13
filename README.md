@@ -18,7 +18,7 @@ Voice assistant app have been created to solve simple and day-to-day problems.
 
 
 ## Installation
-After cloning this repository go to `flutter-reddit-clone` folder. Then, follow the following steps:
+After cloning this repository go to `voice-assistant-app` folder. Then, follow the following steps:
 - Create account in OpenAI platform
 - Create your own api key (Note: api key is not free!)
 - Open secrets folder in lib folder
