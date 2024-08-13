@@ -13,7 +13,7 @@ Voice assistant app have been to solve simple and day-to-day problems.
 - Network calls 
 
 ## Screenshots
-<img src="screenshots/screenshot_1.png" alt="Screenshot" width="200"/>
+<img src="screenshots/screenshot_1.png" alt="Screenshot" width="250"/>
 
 
 ## Installation
